@@ -177,6 +177,15 @@ export const portfolioInfo = {
          description: 'Приложение конвертера валют с прямым и обратным переводом выполненное на React. Использование стороннего API. Создано в течении одного дня для себя',
          gitHub: 'https://github.com/Konstantin737/ExchangeRate',
          isOpenBtn: false
+      },
+      {
+         id:19,
+         nameWork: 'Электронное портфолио для себя',
+         stack: ['JavaScript', 'React', 'Redux'],
+         image: ['port1.png', 'port2.png', 'port3.png', 'port4.png', 'port5.png', 'port6.png'],
+         description: 'Приложение портфолио с эскизами выполненных работ, ссылками на GitHub и контактной информацией',
+         gitHub: 'https://github.com/Konstantin737/portfolio-app',
+         isOpenBtn: false
       }
    ]
 }
