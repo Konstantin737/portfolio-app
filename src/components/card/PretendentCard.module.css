@@ -1,0 +1,121 @@
+.wrapper {
+   width: 90%;
+   margin: 2% auto;
+   background-color: #1a4979;
+   border-radius: 10px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   padding: 20px;
+}
+
+.wrapper_card {
+   display: flex;
+   align-items: center;
+}
+
+.wrapper_card__img {
+   width: 20%;
+   margin: 20px 20px;
+   border-radius: 10px;
+   animation: card__img;
+   animation-duration: 4s; 
+   animation-iteration-count: infinite;
+}
+
+@keyframes card__img {   
+   0% {     
+      box-shadow: 0px 0px 25px 5px rgb(16, 21, 90);  
+   }
+   50% {
+      box-shadow: none;
+   }   
+   100% {
+      box-shadow: 0px 0px 25px 5px rgb(16, 21, 90);
+   }
+}
+
+/* .wrapper_card_info {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+} */
+
+.wrapper_card_info__item {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   margin: 10px auto;
+}
+
+.wrapper_card_info__item span {
+   margin-left: 10px;
+   font-size: 20px;
+}
+
+.wrapper_card_info__item a {
+   color: white;
+   text-decoration: none;
+}
+
+.wrapper_card_info__img {
+   width: 7%;
+   border-radius: 10%;
+}
+
+.wrapper_card_info__item:hover > .wrapper_card_info__img{
+   animation: card_info__img;
+   animation-duration: 0.8s;
+   animation-iteration-count: inherit;
+}
+
+@keyframes card_info__img {   
+   0% {     
+      transform: rotateY(0deg);  
+   }
+   50% {
+      transform: rotateY(360deg);
+   }   
+   100% {
+      transform: rotateY(0deg);  
+   }
+ }
+
+.wrapper_button {
+   width: 100%;
+   border: 5px solid #112d49;
+   border-radius: 10px;
+   color: white;
+   font-weight: bold;
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+   z-index: 1;
+   font-size: 20px;
+   line-height: 50px;
+}
+
+.wrapper_button__bgd {
+   width: 100%;
+   height: 100%;
+   background-color: #112d49;
+   position: absolute;
+   margin-left: 0%;
+   top: 0;
+   left: 0;
+   z-index: -1;
+}
+
+.wrapper_button:hover > .wrapper_button__bgd {
+   margin-left: 100%;
+   transition-duration: 500ms;
+}
+
+.wrapper_button:hover {
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.658);
+}
+
+.wrapper_button:active {
+   box-shadow: none
+}

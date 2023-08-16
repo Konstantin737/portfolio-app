@@ -1,0 +1,139 @@
+.wrapper {
+   width: 100%;
+}
+
+.info_panel {
+   display: flex;
+   align-items: center;
+   flex-wrap: wrap;
+   background-color: #112d49;
+   margin-top: 10px;
+   padding: 10px;
+   border-radius: 10px;
+   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+   .info_panel {
+      justify-content: center;
+      overflow: hidden;
+   }
+}
+
+.info_panel__courses {
+   cursor:auto;
+}
+
+.info_panel__button {
+   background-color: #112d49;
+   padding: 0 0 10px 0;
+   margin: auto auto 10px auto;
+   border-radius: 0 0 10px 10px;
+   cursor: pointer;
+   display: none;
+}
+
+.info_panel__wrapper:hover .info_panel__button{
+   background-color: #112d4980;
+   padding-top: 10px;
+   margin-top: -8px;
+   display: block;
+   animation: info_panel_button;
+   animation-duration: 0.5s;
+   animation-iteration-count: 1;
+}
+
+@keyframes info_panel_button {   
+   0% {     
+      margin-top: -30px;
+      font-size: 0;
+   }   
+   100% {
+      margin-top: -8px;
+      font-size: 16px;
+   }
+}
+
+.info_panel__wrapper:active  .info_panel__button{
+   background-color: #112d49;
+}
+
+.info_panel__stackpanel {
+   margin: 5px 5px;
+   background-color: blue;
+   padding: 5px 10px;
+   border-radius: 5px;
+   box-shadow: 0 0 5px black;
+}
+
+.info_panel__number {
+   margin-right: 10px;
+}
+
+.info_panel__namework {
+   margin: auto 10px;
+   font-size: 1.2rem;
+}
+
+.info_panel_image__wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.info_panel__image {
+   margin-top: 10px;
+   width: 80%;
+   border-radius: 10px;
+   border: 3px solid #112d49;
+}
+
+.info_panel_image__wrapper button {
+   background-color: #112d49;
+   color: white;
+}
+
+.info_panel_image__wrapper button:hover {
+   box-shadow: 0 0 5px black;
+}
+
+.info_panel_image__wrapper button:active {
+   box-shadow: none;
+}
+
+.info_panel_description {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 10px;
+   border: 3px solid #112d49;
+   font-size: 1.2rem;
+   margin: 10px 10px;
+}
+
+.info_panel_description span {
+   padding: 10px;
+}
+
+.info_panel_description__click:hover {
+   box-shadow: 0 0 5px black;
+}
+
+.info_panel_description__click:active {
+   box-shadow: none;
+   font-size: 20px;
+}
+
+.info_panel_git_text {
+   color: white;
+   text-decoration: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.info_panel_git_img {
+   width: 5%;
+   padding: 6px;
+   margin-right: 10px;
+}
