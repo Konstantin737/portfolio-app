@@ -8,7 +8,7 @@ import emailImg from "../../image/email.png";
 import codewarsImg from "../../image/codewars.png";
 import challengeImg from "../../image/challenge.png";
 import Button from "../button/Button";
-// import candidatePhoto from '../../image/photo.png'
+
 
 function PretendentCard() {
 

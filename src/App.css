@@ -1,6 +1,12 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
 .App {
   text-align: center;
-  position: relative;
+  flex: 1 0 auto
 }
 
 .background_image {
