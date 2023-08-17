@@ -9,17 +9,17 @@ function App() {
   return (
     <BrowserRouter>
       <>
-      <div className='background_image'></div>
-      <div className='wrapper'>
-        <div className="App">
-          <Routes>
-            <Route path='/' element={<PretendentCard />} />
-            <Route path='/works' element={<WorksList />} />
-            <Route path='/courses' element={<CoursesList />} />
-          </Routes>
+        <div className='background_image'></div>
+        <div className='wrapper'>
+          <div className="App">
+            <Routes>
+              <Route path='/' element={<PretendentCard />} />
+              <Route path='/works' element={<WorksList />} />
+              <Route path='/courses' element={<CoursesList />} />
+            </Routes>
+          </div>
+          <Footer/>
         </div>
-        <Footer/>
-      </div>
       </>
     </BrowserRouter>
   );
