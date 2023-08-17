@@ -13,13 +13,6 @@
    cursor: pointer;
 }
 
-@media (max-width: 600px) {
-   .info_panel {
-      justify-content: center;
-      overflow: hidden;
-   }
-}
-
 .info_panel__courses {
    cursor:auto;
 }
@@ -64,6 +57,9 @@
    padding: 5px 10px;
    border-radius: 5px;
    box-shadow: 0 0 5px black;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 }
 
 .info_panel__number {
@@ -136,4 +132,21 @@
    width: 5%;
    padding: 6px;
    margin-right: 10px;
+}
+
+@media (max-width: 600px) {
+   .info_panel {
+      justify-content: center;
+      overflow: hidden;
+   }
+}
+
+@media (max-width: 660px) {
+
+   .info_panel__namework, .info_panel_description span, .info_panel__stackpanel span, .info_panel_description a, h2 {
+      font-size: 3vw;
+   }
+   .info_panel__stackpanel {
+      padding: 1px 5px;
+   }
 }

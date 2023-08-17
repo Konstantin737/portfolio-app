@@ -53,9 +53,9 @@ function InfoPanel() {
                <span className={styles.info_panel__namework}>{item.nameWork}</span>
             </div>
             <div className={styles.info_panel_image__wrapper}>
-               {item.isOpenBtn&&store&&images.length>1&&<button onClick={clickLeft}>⇦</button>}
+               {item.isOpenBtn&&store&&images.length>1&&<button onClick={clickLeft}>{'<'}</button>}
                {item.isOpenBtn&&store&&show&&<img className={styles.info_panel__image} src={require(`../../image/works/${images[imageCounter]}`)} alt='work_image'></img>}
-               {item.isOpenBtn&&store&&images.length>1&&<button onClick={clickRight}>⇨</button>}
+               {item.isOpenBtn&&store&&images.length>1&&<button onClick={clickRight}>{'>'}</button>}
             </div>
             {item.isOpenBtn&&store&&show&&<div className={styles.info_panel_description}><span>{item.description}</span></div>}
             {item.isOpenBtn&&store&&show&&<div className={`${styles.info_panel_description} ${styles.info_panel_description__click}`}>
