@@ -7,7 +7,7 @@ function Footer() {
 
    return (
       <div className={styles.footer}>
-         <span>© Samartsev Konstantin {date.getFullYear()}г.</span>
+         <span>© Samartsev Konstantin 2021 - {date.getFullYear()}г.</span>
       </div>
    )
 }

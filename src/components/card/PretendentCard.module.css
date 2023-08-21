@@ -12,6 +12,7 @@
 
 .wrapper h2 {
    font-size: 3vw;
+   color: white;
 }
 
 .wrapper_card {
@@ -50,6 +51,7 @@
 .wrapper_card_info__item span {
    margin-left: 10px;
    font-size: 1.2rem;
+   color: white;
 }
 
 .wrapper_card_info__item a {
@@ -80,43 +82,6 @@
    }
  }
 
-/* .wrapper_button {
-   width: 100%;
-   border: 5px solid #112d49;
-   border-radius: 10px;
-   color: white;
-   font-weight: bold;
-   position: relative;
-   cursor: pointer;
-   overflow: hidden;
-   z-index: 1;
-   line-height: 50px;
-} */
-
-/* .wrapper_button__bgd {
-   width: 100%;
-   height: 100%;
-   background-color: #112d49;
-   position: absolute;
-   margin-left: 0%;
-   top: 0;
-   left: 0;
-   z-index: -1;
-} */
-
-/* .wrapper_button:hover > .wrapper_button__bgd {
-   margin-left: 100%;
-   transition-duration: 500ms;
-}
-
-.wrapper_button:hover {
-   box-shadow: 0 0 10px rgba(0, 0, 0, 0.658);
-}
-
-.wrapper_button:active {
-   box-shadow: none
-} */
-
 @media (max-width: 860px) {
    .wrapper_card {
       flex-direction: column;
@@ -124,7 +89,7 @@
    }
    .wrapper_card__img {
       width: 30%;
-      margin: 10px 10px;
+      margin: 0px 5px;
    }
    .wrapper_card_info__item {
       margin: 5px auto;

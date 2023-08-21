@@ -129,9 +129,8 @@
 }
 
 .info_panel_git_img {
-   width: 5%;
-   padding: 6px;
-   margin-right: 10px;
+   width: 8%;
+   margin: 3px 10px 3px 0;
 }
 
 @media (max-width: 600px) {
