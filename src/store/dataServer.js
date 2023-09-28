@@ -23,7 +23,7 @@ export const portfolioInfo = {
          stack: ['HTML', 'CSS'],
          image: ['HTMLCSS4.png'],
          description: 'Работа была сделана по макету в Photoshop без использования flex и grid. Для позиционирования использовалось block, inline-block, position: releative, position: absolute.',
-         gitHub: 'Не выкладывал на GitHub.',
+         gitHub: 'https://github.com/Konstantin737/3.Market',
          isOpenBtn: false
       },
       {
@@ -32,7 +32,7 @@ export const portfolioInfo = {
          stack: ['HTML', 'CSS'],
          image: ['HTMLCSS5.png'],
          description: 'Работа была сделана по PrintScreen c реального сайта "РЖД" без использования flex и grid. Для позиционирования использовалось block, inline-block, position: releative, position: absolute',
-         gitHub: 'https://github.com/Konstantin737/2.RZD.',
+         gitHub: 'https://github.com/Konstantin737/2.RZD',
          isOpenBtn: false
       },
       {

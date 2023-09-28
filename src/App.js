@@ -10,7 +10,7 @@ function App() {
   return (
     <BrowserRouter>
       <>
-        <NavBar />
+        {/* <NavBar/> */}
         <div className={styles.background_image}></div>
         <div className={styles.wrapper}>
           <div className={styles.app}>

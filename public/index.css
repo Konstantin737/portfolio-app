@@ -1,0 +1,115 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   --index: calc(1vw + 1vh);
+}
+
+body {
+   background-color: black;
+   color: white;
+}
+
+.logo {
+   --logo-size: calc(var(--index)*8);
+   width: var(--logo-size);
+   height: var(--logo-size);
+   background-repeat: no-repeat;
+   position: absolute;
+   left: calc(50% - calc(var(--logo-size)/2));
+   top: calc(var(--index)*3);
+   z-index: 1;
+}
+
+.layers {
+   perspective: 1000px;
+   overflow: hidden;
+}
+.layers__conteiner {
+   height: 100vh;
+   min-height: 500px;
+   transform-style: preserve-3d;
+   transform: rotateX(var(--move-y)) rotateY(var(--move-x));
+   will-change: transform;
+}
+
+.layers__item {
+   position: absolute;
+   inset: -5vw;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.layer-1 {
+   transform: translateZ(-85px) scale(1.06);
+}
+.layer-2 {
+   transform: translateZ(60px) scale(0.88);
+}
+.layer-3 {
+   transform: translateZ(200px) scale(0.8);
+}
+.layer-4 {
+   transform: translateZ(90px) scale(0.9);
+}
+
+.greeting {
+   --gree-size: calc(var(--index)*24);
+   width: var(--gree-size);
+   font-weight: 600;
+   font-size: calc(var(--index)*1);
+   position: absolute;
+   left: calc(50% - calc(var(--gree-size)/2));
+   bottom: 15%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   z-index: 2;
+}
+
+.button-start {
+   --btn-size: calc(var(--index)*10);
+   width: var(--btn-size);
+   height: var(--btn-size)/2;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 600;
+   text-transform: uppercase;
+   font-size: calc(var(--index)*.7);
+   letter-spacing: -.02vw;
+   padding: calc(var(--index)*.7) calc(var(--index)*.25);
+   background-color: transparent;
+   color: white;
+   border-radius: 10em;
+   border: 3px solid white;
+   outline: none;
+   cursor: pointer;
+   position: absolute;
+   left: calc(50% - calc(var(--btn-size)/2));
+   top: 45%;
+   z-index: 2;
+}
+
+.button-start:hover {
+   color: rgba(255, 255, 255, 0.411);
+   border: 3px solid rgba(255, 255, 255, 0.411);
+}
+
+.button-start:active {
+   color: white;
+   border: 3px solid white;
+}
+
+.layer-1, .layer-2, .layer-3, .layer-4 {
+   pointer-events: none;
+}
+
+.unshow {
+   display: none;
+}

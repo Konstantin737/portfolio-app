@@ -15,9 +15,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+    <script src="./libs/rain.js" defer></script>
     <title>Portfolio App</title>
   </head>
   <body>
-    <div id="root"></div>
+    <section class="layers">
+      <div class="layers__conteiner">
+          <div class="layers__item layer-1" style='background-image: url(image/img/background-b.png)'></div>
+          <div class="layers__item layer-2" style='background-image: url(image/img/hudy-b.png)'></div>
+          <div class="layers__item layer-3" style='background-image: url(image/img/car-b.png)'></div>
+          <div class="layers__item layer-4">
+            <canvas class='rain'></canvas>
+          </div>
+      </div>
+      <div class="greeting"><span>Добро пожаловать на страничку моего портфолио.</span><span>Спасибо!</span></div>
+      <button class="button-start">Начать просмотр</button>
+    </section>
+    <div id="root" class="unshow"></div>
   </body>
 </html>

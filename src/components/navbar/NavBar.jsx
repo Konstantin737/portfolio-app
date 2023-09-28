@@ -7,7 +7,7 @@ import styles from './NavBar.module.css'
 import CloseButton from 'react-bootstrap/CloseButton'
 
 function NavBar() {
-  return (
+   return (
    <>
       {['sm'].map((expand) => (
       <Navbar key={expand} expand="lg" variant="dark" className={`mb-3 ${styles.navbar}`}>
@@ -35,7 +35,7 @@ function NavBar() {
       </Navbar>
       ))}
    </>
-  );
+   );
 }
 
 export default NavBar;
